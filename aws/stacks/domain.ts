@@ -2,6 +2,8 @@ import * as CloudFront from '@aws-cdk/aws-cloudfront'
 import * as S3 from '@aws-cdk/aws-s3'
 import * as SSM from '@aws-cdk/aws-ssm'
 import * as CDK from '@aws-cdk/core'
+import * as acm from '@aws-cdk/aws-certificatemanager';
+import * as route53 from '@aws-cdk/aws-route53';
 
 import { getParam } from '../lib/helpers'
 
@@ -20,6 +22,22 @@ export class DomainStack extends CDK.Stack {
       bucketName: getParam(this, `/${props.name}/S3/Assets/Name`),
       bucketDomainName: getParam(this, `/${props.name}/S3/Assets/DomainName`),
     })
+
+    // new acm.Certificate(this, 'Certificate', {
+    //   domainName: 'example.com',
+    //   subjectAlternativeNames: ['bla.photosha.ch', 'bla2.photosha.ch', 'test.photosha.ch', 'ssr.photosha.ch'],
+    //   validationMethod: acm.ValidationMethod.DNS
+    // });
+
+    const myHostedZone = new route53.HostedZone(this, 'HostedZone', {
+      zoneName: 'photosha.ch',
+    });
+
+    new acm.DnsValidatedCertificate(this, 'Certificate', {
+      domainName: 'photosha.ch',
+      subjectAlternativeNames: ['bla.photosha.ch', 'bla2.photosha.ch', 'test.photosha.ch', 'ssr.photosha.ch'],
+      hostedZone: myHostedZone
+    });
 
     const distribution = new CloudFront.CloudFrontWebDistribution(this, 'CDN', {
       httpVersion: CloudFront.HttpVersion.HTTP2,

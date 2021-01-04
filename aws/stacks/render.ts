@@ -30,10 +30,10 @@ export class RenderStack extends CDK.Stack {
     const integration = new APIGateway.LambdaIntegration(render)
 
     const root = api.root
-    // const path = api.root.addResource('{proxy+}')
+    const path = api.root.addResource('{proxy+}')
 
     root.addMethod('ANY', integration)
-    // path.addMethod('ANY', integration)
+    path.addMethod('ANY', integration)
 
     new SSM.StringParameter(this, 'SSMAPIGatewayRestIs', {
       description: 'API Gateway ID',
