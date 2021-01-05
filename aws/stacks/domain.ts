@@ -29,15 +29,15 @@ export class DomainStack extends CDK.Stack {
     //   validationMethod: acm.ValidationMethod.DNS
     // });
 
-    const myHostedZone = new route53.HostedZone(this, 'HostedZone', {
-      zoneName: 'photosha.ch',
-    });
+    // const myHostedZone = new route53.HostedZone(this, 'HostedZone', {
+    //   zoneName: 'photosha.ch',
+    // });
 
-    new acm.DnsValidatedCertificate(this, 'Certificate', {
-      domainName: 'photosha.ch',
-      subjectAlternativeNames: ['bla.photosha.ch', 'bla2.photosha.ch', 'test.photosha.ch', 'ssr.photosha.ch'],
-      hostedZone: myHostedZone
-    });
+    // new acm.DnsValidatedCertificate(this, 'Certificate', {
+    //   domainName: 'photosha.ch',
+    //   subjectAlternativeNames: ['bla.photosha.ch', 'bla2.photosha.ch', 'test.photosha.ch', 'ssr.photosha.ch'],
+    //   hostedZone: myHostedZone
+    // });
 
     const distribution = new CloudFront.CloudFrontWebDistribution(this, 'CDN', {
       httpVersion: CloudFront.HttpVersion.HTTP2,
