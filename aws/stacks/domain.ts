@@ -4,12 +4,16 @@ import * as SSM from '@aws-cdk/aws-ssm'
 import * as CDK from '@aws-cdk/core'
 import * as acm from '@aws-cdk/aws-certificatemanager';
 import * as route53 from '@aws-cdk/aws-route53';
+import { config } from '../../config'
 
 import { getParam } from '../lib/helpers'
+import { ViewerCertificate } from '@aws-cdk/aws-cloudfront';
 
 export interface DomainProps extends CDK.StackProps {
   name: string
 }
+
+type Nullable<T> = T | null;
 
 export class DomainStack extends CDK.Stack {
   constructor(app: CDK.App, id: string, props: DomainProps) {
@@ -27,28 +31,13 @@ export class DomainStack extends CDK.Stack {
       zoneName: 'photosha.ch'
     });
 
-    // crateing the certificate doesn't work beacause of the bug...
-    // https://github.com/aws/aws-cdk/issues/1312
-    // const certificate = new acm.DnsValidatedCertificate(this, 'CrossRegionCertificate', {
-    //   domainName: 'photosha.ch',
-    //   hostedZone: photoshaHostedZone,
-    //   subjectAlternativeNames: ['ssr.photosha.ch'],
-    //   region: 'us-east-1'
-    // });
-
 
     const distribution = new CloudFront.CloudFrontWebDistribution(this, 'CDN', {
       httpVersion: CloudFront.HttpVersion.HTTP2,
       priceClass: CloudFront.PriceClass.PRICE_CLASS_100,
       viewerProtocolPolicy: CloudFront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
       defaultRootObject: '/',
-      // viewerCertificate: {
-      //   aliases: ['ssr.photosha.ch'],
-      //   props: {
-      //     acmCertificateArn: certificate.certificateArn,
-      //     cloudFrontDefaultCertificate: false
-      //   }
-      // },
+      viewerCertificate: this.getViewerCertificate(),
       originConfigs: [
         {
           s3OriginSource: {
@@ -98,5 +87,33 @@ export class DomainStack extends CDK.Stack {
       parameterName: `/${props.name}/CloudFront/DistributionID`,
       stringValue: distribution.distributionId,
     })
+  }
+
+  getViewerCertificate(): ViewerCertificate | undefined {
+    if (config.certificateArn) {
+      const certificate = acm.Certificate.fromCertificateArn(this, 'manual-certificate-arn', config.certificateArn);
+      var manualViewerCertificate: ViewerCertificate;
+
+      manualViewerCertificate = {
+        aliases: ['ssr.photosha.ch'],
+        props: {
+          acmCertificateArn: certificate.certificateArn,
+          cloudFrontDefaultCertificate: false
+        }
+      }
+
+      return manualViewerCertificate;
+    }
+    
+    return undefined;
+  
+    // crateing the certificate doesn't work beacause of the bug...
+    // https://github.com/aws/aws-cdk/issues/1312
+    // const certificate = new acm.DnsValidatedCertificate(this, 'CrossRegionCertificate', {
+    //   domainName: 'photosha.ch',
+    //   hostedZone: photoshaHostedZone,
+    //   subjectAlternativeNames: ['ssr.photosha.ch'],
+    //   region: 'us-east-1'
+    // });
   }
 }
