@@ -42,7 +42,8 @@ export class DomainStack extends CDK.Stack {
       viewerCertificate: {
         aliases: ['ssr.photosha.ch'],
         props: {
-          acmCertificateArn: certificate.certificateArn
+          acmCertificateArn: certificate.certificateArn,
+          cloudFrontDefaultCertificate: false
         }
       },
       originConfigs: [
