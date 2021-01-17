@@ -27,12 +27,14 @@ export class DomainStack extends CDK.Stack {
       zoneName: 'photosha.ch'
     });
 
-    const certificate = new acm.DnsValidatedCertificate(this, 'CrossRegionCertificate', {
-      domainName: 'photosha.ch',
-      hostedZone: photoshaHostedZone,
-      subjectAlternativeNames: ['ssr.photosha.ch'],
-      region: 'us-east-1'
-    });
+    // crateing the certificate doesn't work beacause of the bug...
+    // https://github.com/aws/aws-cdk/issues/1312
+    // const certificate = new acm.DnsValidatedCertificate(this, 'CrossRegionCertificate', {
+    //   domainName: 'photosha.ch',
+    //   hostedZone: photoshaHostedZone,
+    //   subjectAlternativeNames: ['ssr.photosha.ch'],
+    //   region: 'us-east-1'
+    // });
 
 
     const distribution = new CloudFront.CloudFrontWebDistribution(this, 'CDN', {
@@ -40,13 +42,13 @@ export class DomainStack extends CDK.Stack {
       priceClass: CloudFront.PriceClass.PRICE_CLASS_100,
       viewerProtocolPolicy: CloudFront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
       defaultRootObject: '/',
-      viewerCertificate: {
-        aliases: ['ssr.photosha.ch'],
-        props: {
-          acmCertificateArn: certificate.certificateArn,
-          cloudFrontDefaultCertificate: false
-        }
-      },
+      // viewerCertificate: {
+      //   aliases: ['ssr.photosha.ch'],
+      //   props: {
+      //     acmCertificateArn: certificate.certificateArn,
+      //     cloudFrontDefaultCertificate: false
+      //   }
+      // },
       originConfigs: [
         {
           s3OriginSource: {
