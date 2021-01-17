@@ -27,7 +27,7 @@ export class DomainStack extends CDK.Stack {
       zoneName: 'photosha.ch'
     });
 
-    new acm.Certificate(this, 'Certificate', {
+    const certificate = new acm.Certificate(this, 'Certificate', {
       domainName: 'photosha.ch',
       validation: acm.CertificateValidation.fromDns(photoshaHostedZone),
       subjectAlternativeNames: ['ssr.photosha.ch']
@@ -39,6 +39,12 @@ export class DomainStack extends CDK.Stack {
       priceClass: CloudFront.PriceClass.PRICE_CLASS_100,
       viewerProtocolPolicy: CloudFront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
       defaultRootObject: '/',
+      viewerCertificate: {
+        aliases: ['ssr.photosha.ch'],
+        props: {
+          acmCertificateArn: certificate.certificateArn
+        }
+      },
       originConfigs: [
         {
           s3OriginSource: {
