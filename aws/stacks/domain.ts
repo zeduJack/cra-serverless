@@ -27,12 +27,12 @@ export class DomainStack extends CDK.Stack {
       zoneName: 'photosha.ch'
     });
 
-    new acm.DnsValidatedCertificate(this, 'CrossRegionCertificate', {
+    new acm.Certificate(this, 'Certificate', {
       domainName: 'photosha.ch',
-      hostedZone: photoshaHostedZone,
-      subjectAlternativeNames: ['ssr.photosha.ch'],
-      region: 'us-east-1'
+      validation: acm.CertificateValidation.fromDns(photoshaHostedZone),
+      subjectAlternativeNames: ['ssr.photosha.ch']
     });
+
 
     const distribution = new CloudFront.CloudFrontWebDistribution(this, 'CDN', {
       httpVersion: CloudFront.HttpVersion.HTTP2,
