@@ -23,16 +23,16 @@ export class DomainStack extends CDK.Stack {
       bucketDomainName: getParam(this, `/${props.name}/S3/Assets/DomainName`),
     })
 
-    const photoshaHostedZone = new route53.HostedZone(this, 'hosted-zone', {
-      zoneName: 'photosha.ch'
-    });
+    // const photoshaHostedZone = new route53.HostedZone(this, 'hosted-zone', {
+    //   zoneName: 'photosha.ch'
+    // });
 
-    new acm.DnsValidatedCertificate(this, 'CrossRegionCertificate', {
-      domainName: 'photosha.ch',
-      hostedZone: photoshaHostedZone,
-      subjectAlternativeNames: ['ssr.photosha.ch'],
-      region: 'us-east-1'
-    });
+    // new acm.DnsValidatedCertificate(this, 'CrossRegionCertificate', {
+    //   domainName: 'photosha.ch',
+    //   hostedZone: photoshaHostedZone,
+    //   subjectAlternativeNames: ['ssr.photosha.ch'],
+    //   region: 'us-east-1'
+    // });
 
     const distribution = new CloudFront.CloudFrontWebDistribution(this, 'CDN', {
       httpVersion: CloudFront.HttpVersion.HTTP2,
