@@ -27,11 +27,7 @@ export class DomainStack extends CDK.Stack {
       bucketDomainName: getParam(this, `/${props.name}/S3/Assets/DomainName`),
     })
 
-    const photoshaHostedZone = new route53.HostedZone(this, 'hosted-zone', {
-      zoneName: 'photosha.ch'
-    });
-
-
+    
     const distribution = new CloudFront.CloudFrontWebDistribution(this, 'CDN', {
       httpVersion: CloudFront.HttpVersion.HTTP2,
       priceClass: CloudFront.PriceClass.PRICE_CLASS_100,
@@ -91,11 +87,10 @@ export class DomainStack extends CDK.Stack {
 
   getViewerCertificate(): ViewerCertificate | undefined {
     if (config.certificateArn) {
-      return {
+      return <ViewerCertificate> { 
         aliases: ['ssr.photosha.ch'],
         props: {
-          acmCertificateArn: config.certificateArn,
-          cloudFrontDefaultCertificate: false
+          acmCertificateArn: config.certificateArn
         }
       };
     }
