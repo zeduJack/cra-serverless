@@ -13,7 +13,7 @@ export interface DomainProps extends CDK.StackProps {
   name: string
 }
 
-type Nullable<T> = T | null;
+// type Nullable<T> = T | null;
 
 export class DomainStack extends CDK.Stack {
   constructor(app: CDK.App, id: string, props: DomainProps) {
@@ -33,7 +33,7 @@ export class DomainStack extends CDK.Stack {
       priceClass: CloudFront.PriceClass.PRICE_CLASS_100,
       viewerProtocolPolicy: CloudFront.ViewerProtocolPolicy.REDIRECT_TO_HTTPS,
       defaultRootObject: '/',
-      viewerCertificate: this.getViewerCertificate(),
+      // viewerCertificate: this.getViewerCertificate(),
       originConfigs: [
         {
           s3OriginSource: {
