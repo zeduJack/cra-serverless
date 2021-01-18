@@ -91,18 +91,13 @@ export class DomainStack extends CDK.Stack {
 
   getViewerCertificate(): ViewerCertificate | undefined {
     if (config.certificateArn) {
-      const certificate = acm.Certificate.fromCertificateArn(this, 'manual-certificate-arn', config.certificateArn);
-      var manualViewerCertificate: ViewerCertificate;
-
-      manualViewerCertificate = {
+      return {
         aliases: ['ssr.photosha.ch'],
         props: {
-          acmCertificateArn: certificate.certificateArn,
+          acmCertificateArn: config.certificateArn,
           cloudFrontDefaultCertificate: false
         }
-      }
-
-      return manualViewerCertificate;
+      };
     }
     
     return undefined;
