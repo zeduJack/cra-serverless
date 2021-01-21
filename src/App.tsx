@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Helmet } from 'react-helmet-async'
 import { Route, Switch } from 'react-router'
 import styled, { createGlobalStyle } from 'styled-components'
@@ -7,8 +7,16 @@ import { Details } from './pages/Details'
 import { NotFound } from './pages/Error'
 import { Home } from './pages/Home'
 
-import { Footer } from './components/Footer'
+// import { Footer } from './components/Footer'
 import { Navigation } from './components/Navigation'
+import { makeStyles, ThemeProvider } from '@material-ui/core/styles'
+
+import theme from './theme';
+import CssBaseline from '@material-ui/core/CssBaseline'
+import Container from '@material-ui/core/Container'
+import Header from './components/common/Header'
+import SideNav from './components/common/SideNav'
+import Footer from './components/common/Footer'
 
 const GlobalStyles = createGlobalStyle`
   body {
@@ -26,27 +34,55 @@ const Wrapper = styled.div`
   text-align: center;
 `
 
-const App: React.FC = () => (
-  <>
-    <GlobalStyles />
+const useStyles = makeStyles((theme) => ({
+  container: {
+    flexGrow: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    padding: '0'
+  }
+}));
 
-    <Helmet>
-      <title>{process.env.REACT_APP_NAME}</title>
-    </Helmet>
+const App: React.FC = () => {
+  const [sidenavOpen, setSidenavOpen] = useState(false);
+  const classes = useStyles();
+  return (
 
-    <Wrapper>
-      <Navigation />
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <div className={classes.container}>
+      <Header setSidenavOpen={setSidenavOpen} sidenavOpen={sidenavOpen} />
+        {/* <Toolbar /> */}
+        <Container className={classes.container} maxWidth="lg">
+          {/* <Page setSidenavOpen={setSidenavOpen} /> */}
+        </Container>
+        <SideNav state={{ open: [sidenavOpen, setSidenavOpen] }} />
+        <Footer setSidenavOpen={setSidenavOpen} />
 
-      <Switch>
-        <Route path="/details/:id" component={Details} />
-        <Route path="/" component={Home} exact />
+      </div>
+    </ThemeProvider>
 
-        <Route component={NotFound} />
-      </Switch>
+    // <>
+    //   <GlobalStyles />
 
-      <Footer />
-    </Wrapper>
-  </>
-)
+    //   <Helmet>
+    //     <title>{process.env.REACT_APP_NAME}</title>
+    //   </Helmet>
+
+    //   <Wrapper>
+    //     <Navigation />
+
+    //     <Switch>
+    //       <Route path="/details/:id" component={Details} />
+    //       <Route path="/" component={Home} exact />
+
+    //       <Route component={NotFound} />
+    //     </Switch>
+
+    //     <Footer />
+    //   </Wrapper>
+    // </>
+  )
+}
 
 export default App
