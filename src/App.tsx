@@ -56,7 +56,7 @@ const App: React.FC = () => {
         <Container className={classes.container} maxWidth="lg">
           {/* <Page setSidenavOpen={setSidenavOpen} /> */}
         </Container>
-        <SideNav state={{ open: [sidenavOpen, setSidenavOpen] }} />
+        <SideNav setSidenavOpen={setSidenavOpen} sidenavOpen={sidenavOpen} />
         <Footer setSidenavOpen={setSidenavOpen} />
 
       </div>

@@ -11,15 +11,12 @@ import { Link } from "react-router-dom";
 
 import { NAVIGATION } from '../../constants';
 
-const SideNav = ({ state }) => {
+type Props = {
+    sidenavOpen: boolean;
+    setSidenavOpen: React.Dispatch<React.SetStateAction<boolean>>;
+}
+const SideNav = ({ sidenavOpen, setSidenavOpen }: Props) => {
     const navItems = Object.values(NAVIGATION);
-
-    const {
-        open: [sidenavOpen, setSidenavOpen]
-    } = {
-        open: useState(false),
-        ...(state || {})
-    };
 
     const useStyles = makeStyles(() => ({
         drawer: {

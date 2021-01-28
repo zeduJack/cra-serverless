@@ -94,7 +94,7 @@ const Header = ({ sidenavOpen, setSidenavOpen }: Props) => {
                         {isMobile &&
                             <React.Fragment>
                                 <ShareSelection></ShareSelection>
-                                <IconButton onClick={() => setSidenavOpen(!sidenavOpen)} className={classes.menuButton} color="inherit" aria-label="menu">
+                                <IconButton onClick={() => setSidenavOpen(!sidenavOpen)} color="inherit" aria-label="menu">
                                     <MenuIcon />
                                 </IconButton>
                             </React.Fragment>
