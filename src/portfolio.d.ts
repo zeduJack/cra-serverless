@@ -4,10 +4,12 @@ interface Image {
     h: number;
 }
 
+export interface PortfolioItem {
+    small: Image;
+    medium: Image;
+}
+
 export interface Portfolio {
     header: string;
-    items: {
-        small: Image;
-        medium: Image;
-    }[]
+    items: PortfolioItem[]
 }

@@ -18,7 +18,9 @@ import Header from './components/common/Header'
 import SideNav from './components/common/SideNav'
 import Footer from './components/common/Footer'
 
-import { navigation } from './nav';
+import Page from './components/page/Index';
+
+import { navigation } from './navigation';
 import { angebote } from './angebote';
 
 const GlobalStyles = createGlobalStyle`
@@ -46,17 +48,29 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-// extend angebot navigation with dynamically 
-// generated information from portfolio
-let navAngebot = navigation.filter(x => x.name === 'angebot')[0];
-angebote.forEach(angebot => {
-  navAngebot.items?.push({
-    displayName: angebot.navTitle,
-    key: angebot.name,
-    route: '/angebot/' + angebot.name
-  });
-});
+// // extend angebot navigation with dynamically 
+// // generated information from portfolio
+// let navAngebot = navigation.filter(x => x.name === 'angebot')[0];
+// angebote.forEach(angebot => {
+//   navAngebot.items?.push({
+//     displayName: angebot.navTitle,
+//     key: angebot.name,
+//     route: '/angebot/' + angebot.name
+//   });
+// });
 
+
+if(navigation?.angebot?.items != null){
+  angebote.forEach(angebot => navigation.angebot.items.push(
+    {
+      "displayName": angebot.navTitle,
+      "route": '/angebot/' + angebot.name,
+      "key": angebot.name
+    }
+  ));  
+}
+
+console.log('App.tsx: ', navigation);
 
 const App: React.FC = () => {
   const [sidenavOpen, setSidenavOpen] = useState(false);
@@ -69,7 +83,7 @@ const App: React.FC = () => {
       <Header setSidenavOpen={setSidenavOpen} sidenavOpen={sidenavOpen} />
         {/* <Toolbar /> */}
         <Container className={classes.container} maxWidth="lg">
-          {/* <Page setSidenavOpen={setSidenavOpen} /> */}
+          <Page setSidenavOpen={setSidenavOpen} />
         </Container>
         <SideNav setSidenavOpen={setSidenavOpen} sidenavOpen={sidenavOpen} />
         <Footer setSidenavOpen={setSidenavOpen} />
