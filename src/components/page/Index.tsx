@@ -8,13 +8,13 @@ import PortfolioContent from './PortfolioContent';
 import PhotoSwipeTest from './PhotoSwipeTest';
 import ScrollToTop from '../common/ScrollToTop';
 
-import { navigation, SubNavItem } from '../../navigation';
+import { navigation, SubNavItem, Nav } from '../../nav';
 import { angebote, Angebot as AngebotType } from '../../angebote';
 
 import {
   Switch,
   Route
-} from "react-router-dom";
+} from "react-router";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -31,7 +31,7 @@ type Props = {
 const Page = ({ setSidenavOpen }: Props) => {
   console.log('Index.tsx');
   const classes = useStyles();
-  const navAngebote = navigation.angebot.items as SubNavItem[];
+  const navAngebote = Nav.Angebot.items as SubNavItem[];
   console.log(navigation);
 
   return (
@@ -43,10 +43,7 @@ const Page = ({ setSidenavOpen }: Props) => {
         </Route>
         {navAngebote.map((nav: SubNavItem, index) => (
           <Route exact={true} key={index} path={nav.route}
-            render={() => (<Angebot angebot={angebote.filter(x => {
-              console.log('x.name: ', x.name, ' - nav.key: ', nav.key)
-              return x.name === nav.key
-            })[0]} />)} />
+            render={() => (<Angebot angebot={angebote.filter(x => x.name === nav.key)[0]} />)} />
         ))}
         <Route path="/kontakt">
           <Kontakt />

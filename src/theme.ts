@@ -13,19 +13,19 @@ const theme = createMuiTheme({
   typography: {
     h1: {
       fontFamily: 'inherit',
-      fontWeight: 'inhert',
+      // fontWeight: 'inhert',
       fontSize: '1.5rem',
       paddingBottom: '2rem'
     },
     h2: {
       fontFamily: 'inherit',
-      fontWeight: 'inhert',
+      // fontWeight: 'inhert',
       fontSize: '1.3rem',
       paddingBottom: '2rem'
     },
     h3: {
       fontFamily: 'inherit',
-      fontWeight: 'inhert',
+      // fontWeight: 'inhert',
       fontSize: '1.1rem',
       paddingBottom: '2rem'
     }

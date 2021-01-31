@@ -26,4 +26,10 @@ export const navigation: NavItem[] = [{
     "displayName": "Kontakt"
 }]
 
+export class Nav {
+    static get Angebot(): NavItem {
+        return navigation.filter(n => n.name === 'angebot')[0] as NavItem;
+    }
+}
+
 export default navigation;

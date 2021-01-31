@@ -20,7 +20,7 @@ import Footer from './components/common/Footer'
 
 import Page from './components/page/Index';
 
-import { navigation } from './navigation';
+import { navigation, Nav } from './nav';
 import { angebote } from './angebote';
 
 const GlobalStyles = createGlobalStyle`
@@ -48,27 +48,15 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-// // extend angebot navigation with dynamically 
-// // generated information from portfolio
-// let navAngebot = navigation.filter(x => x.name === 'angebot')[0];
-// angebote.forEach(angebot => {
-//   navAngebot.items?.push({
-//     displayName: angebot.navTitle,
-//     key: angebot.name,
-//     route: '/angebot/' + angebot.name
-//   });
-// });
-
-
-if(navigation?.angebot?.items != null){
-  angebote.forEach(angebot => navigation.angebot.items.push(
-    {
-      "displayName": angebot.navTitle,
-      "route": '/angebot/' + angebot.name,
-      "key": angebot.name
-    }
-  ));  
-}
+// extend angebot navigation with dynamically 
+// generated information from portfolio
+angebote.forEach(angebot => {
+  Nav.Angebot.items?.push({
+    displayName: angebot.navTitle,
+    key: angebot.name,
+    route: '/angebot/' + angebot.name
+  });
+});
 
 console.log('App.tsx: ', navigation);
 
