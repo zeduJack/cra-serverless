@@ -1,4 +1,6 @@
-﻿const portfolios: portfolioType[] = [
+﻿import { Portfolio } from './portfolio';
+
+export const portfolio: Portfolio[] = [
     {
         "header": "Portrait",
         "items": [
@@ -1467,4 +1469,4 @@
 ]
 
 
-export default portfolios;
+export default portfolio;

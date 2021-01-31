@@ -9,14 +9,13 @@ import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link } from "react-router-dom";
 
-import { NAVIGATION } from '../../constants';
+import { navigation, NavItem } from '../../nav';
 
 type Props = {
     sidenavOpen: boolean;
     setSidenavOpen: React.Dispatch<React.SetStateAction<boolean>>;
 }
 const SideNav = ({ sidenavOpen, setSidenavOpen }: Props) => {
-    const navItems = Object.values(NAVIGATION);
 
     const useStyles = makeStyles(() => ({
         drawer: {
@@ -73,7 +72,7 @@ const SideNav = ({ sidenavOpen, setSidenavOpen }: Props) => {
         <Drawer anchor="right" open={sidenavOpen} onClose={() => setSidenavOpen(!sidenavOpen)}>
             <div className={classes.drawer}>
                 <CloseIcon onClick={() => setSidenavOpen(!sidenavOpen)} className={classes.closeButton}></CloseIcon>
-                {navItems.map((item, idx) => {
+                {navigation.map((item: NavItem, idx) => {
                     if (item.items) {
                         return (<ExpansionPanel key={idx} classes={{ root: expansionPanelClasses.root }}>
                             <ExpansionPanelSummary

@@ -18,6 +18,9 @@ import Header from './components/common/Header'
 import SideNav from './components/common/SideNav'
 import Footer from './components/common/Footer'
 
+import { navigation } from './nav';
+import { angebote } from './angebote';
+
 const GlobalStyles = createGlobalStyle`
   body {
     margin: 0;
@@ -42,6 +45,18 @@ const useStyles = makeStyles((theme) => ({
     padding: '0'
   }
 }));
+
+// extend angebot navigation with dynamically 
+// generated information from portfolio
+let navAngebot = navigation.filter(x => x.name === 'angebot')[0];
+angebote.forEach(angebot => {
+  navAngebot.items?.push({
+    displayName: angebot.navTitle,
+    key: angebot.name,
+    route: '/angebot/' + angebot.name
+  });
+});
+
 
 const App: React.FC = () => {
   const [sidenavOpen, setSidenavOpen] = useState(false);

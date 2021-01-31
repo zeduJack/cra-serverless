@@ -18,8 +18,9 @@ import HeaderNavItem from './HeaderNavItem';
 import Logo from './Logo';
 
 import ShareSelection from './ShareSelection';
-import { NAVIGATION } from '../../constants';
 import { InferProps } from 'prop-types';
+
+import { navigation } from '../../nav';
 
 
 function HideOnScroll({ children }: InferProps<typeof HideOnScroll.propTypes>) {
@@ -67,7 +68,6 @@ type Props = {
 const Header = ({ sidenavOpen, setSidenavOpen }: Props) => {
 
     const classes = useStyles();
-    const navItems = Object.values(NAVIGATION);
 
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
@@ -85,7 +85,7 @@ const Header = ({ sidenavOpen, setSidenavOpen }: Props) => {
                         <div className={classes.spacer}>&nbsp;</div>
                         {!isMobile &&
                             <div className={classes.nav}>
-                                {navItems.map((item, index) => (
+                                {navigation.map((item, index) => (
                                     <HeaderNavItem key={index} item={item} />
                                 ))}
                                 <ShareSelection></ShareSelection>

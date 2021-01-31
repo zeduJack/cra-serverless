@@ -6,9 +6,14 @@ import MenuList from '@material-ui/core/MenuList';
 
 import Link from './Link';
 import LinkBlack from './LinkBlack';
+import { NavItem } from '../../nav';
+
+type Props = {
+  item: NavItem
+}
 
 
-const HeaderNavItem = ({ item }) => {
+const HeaderNavItem = ({ item }: Props) => {
   const [open, setOpen] = React.useState(false);
   const anchorRef = React.useRef(null);
 
