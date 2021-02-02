@@ -7,6 +7,7 @@
     "@material-ui/icons": "^4.9.1",
     "@types/photoswipe": "^4.1.1",
     "@types/prop-types": "^15.7.3",
+    "ignore-styles": "^5.0.1",
     "koa": "^2.11.0",
     "koa-route": "^3.2.0",
     "koa-router": "^8.0.6",

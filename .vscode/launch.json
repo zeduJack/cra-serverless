@@ -1,20 +1,58 @@
 {
     "version": "0.2.0",
     "configurations": [
-
         {
-        "type": "node",
-        "request": "launch",
-        "name": "Launch Program",
-        "skipFiles": [
-            "<node_internals>/**"
-        ],
-        "runtimeArgs": [
-            "-r", "./node_modules/ts-node/register/transpile-only"
-        ],
-        "args": [
-            "${workspaceFolder}/aws/index.ts"
-        ]
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "runtimeArgs": [
+                "-r",
+                "./node_modules/ts-node/register/transpile-only"
+            ],
+            "args": [
+                "${workspaceFolder}/aws/index.ts"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug local",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "runtimeArgs": [
+                "-r",
+                "./node_modules/ts-node/register/transpile-only"
+            ],
+            "args": [
+                "${workspaceFolder}/server/handler/local.ts"
+            ]
+        },
+        {
+            "name": "Local server",
+            "type": "node",
+            "request": "launch",
+            "runtimeExecutable": "node",
+            "runtimeArgs": [
+                "--nolazy",
+                "-r",
+                "ts-node/register/transpile-only"
+            ],
+            "args": [
+                "server/handler/local.ts"
+            ],
+            "cwd": "${workspaceRoot}",
+            "internalConsoleOptions": "openOnSessionStart",
+            "skipFiles": [
+                "<node_internals>/**",
+                "node_modules/**"
+            ],
+            "env": {
+                "TS_NODE_PROJECT": "tsconfig.server.json"
+            }
         }
     ]
 }

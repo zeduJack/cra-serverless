@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
-    "target": "ES2017",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -19,12 +15,6 @@
     "noEmit": true,
     "jsx": "react"
   },
-  "exclude": [
-    "cdk.out",
-    "aws",
-    "server"
-  ],
-  "include": [
-    "src"
-  ]
+  "exclude": ["cdk.out", "aws", "server"],
+  "include": ["src"]
 }

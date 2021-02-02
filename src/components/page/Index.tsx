@@ -29,10 +29,8 @@ type Props = {
 }
 
 const Page = ({ setSidenavOpen }: Props) => {
-  console.log('Index.tsx');
   const classes = useStyles();
   const navAngebote = Nav.Angebot.items as SubNavItem[];
-  console.log(navigation);
 
   return (
     <div onClick={() => setSidenavOpen(false)} className={classes.content}>
