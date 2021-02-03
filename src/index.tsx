@@ -5,14 +5,19 @@ import { BrowserRouter } from 'react-router-dom'
 import './normalize.css'
 import './index.scss'
 
+import { ThemeProvider } from '@material-ui/core/styles';
+
+import theme from './theme';
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 
 render(
   <HelmetProvider>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <ThemeProvider theme={theme}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </ThemeProvider>
   </HelmetProvider>,
   document.getElementById('root'),
 )
