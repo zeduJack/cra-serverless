@@ -58,8 +58,6 @@ angebote.forEach(angebot => {
   });
 });
 
-console.log('App.tsx: ', navigation);
-
 const App: React.FC = () => {
   const [sidenavOpen, setSidenavOpen] = useState(false);
   const classes = useStyles();
