@@ -1,26 +1,28 @@
 import React from 'react'
 import { render } from 'react-dom'
-import { HelmetProvider } from 'react-helmet-async'
 import { BrowserRouter } from 'react-router-dom'
-import './normalize.css'
-import './index.scss'
-
-import { ThemeProvider } from '@material-ui/core/styles';
-
-import theme from './theme';
 import App from './App'
 import * as serviceWorker from './serviceWorker'
 
-render(
-  <HelmetProvider>
+import { ThemeProvider } from '@material-ui/core/styles';
+import theme from './theme';
+
+function Main() {
+  React.useEffect(() => {
+    const jssStyles = document.querySelector('#jss-server-side') as HTMLElement;
+    jssStyles?.parentElement?.removeChild(jssStyles);
+  }, []);
+
+  return (
     <ThemeProvider theme={theme}>
       <BrowserRouter>
         <App />
       </BrowserRouter>
     </ThemeProvider>
-  </HelmetProvider>,
-  document.getElementById('root'),
-)
+  );
+}
+
+render(<Main />, document.querySelector('#root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

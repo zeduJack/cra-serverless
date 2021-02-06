@@ -1,17 +1,6 @@
 import React, { useState } from 'react'
-import { Helmet } from 'react-helmet-async'
-import { Route, Switch } from 'react-router'
-import styled, { createGlobalStyle } from 'styled-components'
-
-import { Details } from './pages/Details'
-import { NotFound } from './pages/Error'
-import { Home } from './pages/Home'
-
-// import { Footer } from './components/Footer'
-import { Navigation } from './components/Navigation'
 import { makeStyles, ThemeProvider } from '@material-ui/core/styles'
 
-import theme from './theme';
 import CssBaseline from '@material-ui/core/CssBaseline'
 import Container from '@material-ui/core/Container'
 import Header from './components/common/Header'
@@ -20,26 +9,14 @@ import Footer from './components/common/Footer'
 
 import Page from './components/page/Index';
 
-import { navigation, Nav } from './nav';
+import { Nav } from './nav';
 import { angebote } from './angebote';
 
-const GlobalStyles = createGlobalStyle`
-  body {
-    margin: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
+import theme from './theme';
+import './normalize.css'
+import './index.scss'
 
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-  }
-`
-
-const Wrapper = styled.div`
-  text-align: center;
-`
-
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles(() => ({
   container: {
     flexGrow: 1,
     display: 'flex',
@@ -76,27 +53,6 @@ const App: React.FC = () => {
 
       </div>
     </ThemeProvider>
-
-    // <>
-    //   <GlobalStyles />
-
-    //   <Helmet>
-    //     <title>{process.env.REACT_APP_NAME}</title>
-    //   </Helmet>
-
-    //   <Wrapper>
-    //     <Navigation />
-
-    //     <Switch>
-    //       <Route path="/details/:id" component={Details} />
-    //       <Route path="/" component={Home} exact />
-
-    //       <Route component={NotFound} />
-    //     </Switch>
-
-    //     <Footer />
-    //   </Wrapper>
-    // </>
   )
 }
 
