@@ -6,6 +6,7 @@ import * as serviceWorker from './serviceWorker'
 
 import { ThemeProvider } from '@material-ui/core/styles';
 import theme from './theme';
+import { HelmetProvider } from 'react-helmet-async'
 
 function Main() {
   React.useEffect(() => {
@@ -15,9 +16,11 @@ function Main() {
 
   return (
     <ThemeProvider theme={theme}>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
+      <HelmetProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </HelmetProvider>
     </ThemeProvider>
   );
 }

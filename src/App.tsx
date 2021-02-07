@@ -13,8 +13,9 @@ import { Nav } from './nav';
 import { angebote } from './angebote';
 
 import theme from './theme';
-import './normalize.css'
-import './index.scss'
+import './normalize.css';
+import './index.scss';
+import { Helmet } from 'react-helmet-async';
 
 const useStyles = makeStyles(() => ({
   container: {
@@ -39,11 +40,15 @@ const App: React.FC = () => {
   const [sidenavOpen, setSidenavOpen] = useState(false);
   const classes = useStyles();
   return (
-
     <ThemeProvider theme={theme}>
+      <Helmet>
+        <title>Fotografin für Portrait, Hochzeit, Familie, Event</title>
+        <meta name="description" content="Professionelle Fotografin für Portraits, Hochzeiten, Familienfotos und Events"></meta>
+      </Helmet>
+
       <CssBaseline />
       <div className={classes.container}>
-      <Header setSidenavOpen={setSidenavOpen} sidenavOpen={sidenavOpen} />
+        <Header setSidenavOpen={setSidenavOpen} sidenavOpen={sidenavOpen} />
         {/* <Toolbar /> */}
         <Container className={classes.container} maxWidth="lg">
           <Page setSidenavOpen={setSidenavOpen} />

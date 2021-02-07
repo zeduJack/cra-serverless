@@ -7,6 +7,7 @@ import InstagramIcon from '@material-ui/icons/Instagram';
 import Typography from '@material-ui/core/Typography';
 import { useTheme } from '@material-ui/core/styles';
 import useMediaQuery from '@material-ui/core/useMediaQuery';
+import { Helmet } from 'react-helmet-async';
 
 const useStyles = makeStyles((theme) => ({
   iconLink: {
@@ -42,6 +43,11 @@ const Kontakt = () => {
 
   return (
     <React.Fragment>
+
+      <Helmet>
+        <title>Kontakt</title>
+        <meta name="description" content="Kontaktieren Sie mich noch heute."></meta>
+      </Helmet>
 
       <Typography align={isMobile ? 'left' : 'center'} variant="h1">
         Kontakt

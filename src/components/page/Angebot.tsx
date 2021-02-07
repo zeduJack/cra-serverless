@@ -4,6 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Typography from '@material-ui/core/Typography';
 import { Angebot as AngebotType } from '../../angebote';
+import { Helmet } from 'react-helmet-async';
 
 const useStyles = makeStyles({
   root: {
@@ -52,6 +53,11 @@ const Angebot = ({ angebot }: Props) => {
 
   return (
     <React.Fragment>
+      <Helmet>
+        <title>{angebot.title}</title>
+        <meta name="description" content="Sha hat für jede Lebenssituation das richtige Angebot."></meta>
+      </Helmet>
+
       <Typography variant="h1">
         {angebot.title}
       </Typography>

@@ -12,6 +12,7 @@ import useMediaQuery from '@material-ui/core/useMediaQuery';
 import { portfolio } from '../../portfolios';
 
 import LeftRightPortfolio from './LeftRightPortfolio';
+import { Helmet } from 'react-helmet-async';
 
 const useStyles = makeStyles(() => ({
   title: {
@@ -37,6 +38,11 @@ const Portfolio = () => {
   return (
 
     <div>
+      <Helmet>
+        <title>Portfolio</title>
+        <meta name="description" content="Portrait | Hochzeit | Event | Familie | Landscape"></meta>
+      </Helmet>
+
       <Typography variant="h1">
         Portfolio
       </Typography>

@@ -1,5 +1,6 @@
 import React from 'react'
 import { makeStyles } from '@material-ui/core/styles';
+import { Helmet } from 'react-helmet-async';
 
 const useStyles = makeStyles({
   title: {
@@ -12,9 +13,17 @@ const About = () => {
   const classes = useStyles();
 
   return (
-    <div>
-      <h3 className={classes.title}>Über mich</h3>
-    </div>
+    <>
+      <Helmet>
+        <title>Photosha - Sha stellt sich vor</title>
+        <meta name="description" content="Erfahren Sie was Sie von Sha erwarten können."></meta>
+      </Helmet>
+
+      <div>
+        <h3 className={classes.title}>Über mich</h3>
+      </div>
+    </>
+
   )
 }
 
