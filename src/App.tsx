@@ -13,7 +13,7 @@ import { Nav } from './nav';
 import { angebote } from './angebote';
 
 import theme from './theme';
-import './normalize.css';
+//import './normalize.css';
 import './index.scss';
 import { Helmet } from 'react-helmet-async';
 
