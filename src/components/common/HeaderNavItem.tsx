@@ -21,7 +21,7 @@ const HeaderNavItem = ({ item }: Props) => {
     return (
       <div onMouseLeave={() => { setOpen(false) }}>
         <span ref={anchorRef} onMouseOver={() => { setOpen(true) }}>{item.displayName}</span>
-        <Popper open={open} anchorEl={anchorRef.current} role={undefined} transition disablePortal>
+        <Popper open={open} anchorEl={anchorRef.current} transition disablePortal>
           <Paper>
             <MenuList>
               {item.items.map((i, subIndex) => (
