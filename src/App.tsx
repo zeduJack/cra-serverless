@@ -70,7 +70,7 @@ const App: React.FC = () => {
       <Helmet>
         <title>Fotografin für Portrait, Hochzeit, Familie, Event</title>
         <meta name="description" content="Professionelle Fotografin für Portraits, Hochzeiten, Familienfotos und Events"></meta>
-        <link rel="stylesheet" href="./normalize.css" />
+        <link rel="stylesheet" href="/normalize.css" />
       </Helmet>
 
       <CssBaseline />

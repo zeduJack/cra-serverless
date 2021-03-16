@@ -69,6 +69,7 @@ foreach ($directory in $directories) {
     $portfolioName = $directoryName.Substring(2);
 
     $objectProperty = [ordered]@{ 
+        route = $portfolioName.ToLower()
         header = $portfolioName 
         items  = $jsonItems
     }

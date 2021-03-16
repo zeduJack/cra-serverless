@@ -51,7 +51,7 @@ const LeftRightPortfolio = ({items, gutter}: Props) => {
                         leftRightPortfolioItems.map((item, i) => {
                             if (item.isLeft) {
                                 return (
-                                    <Link to={"/portfolio/" + item.header} key={i}>
+                                    <Link to={"/portfolio/" + item.route} key={i}>
                                         <LabelImage marginBottom={gutter} label={item.header} alt={item.header} src={item.items[0].small.src}></LabelImage>
                                     </Link>
                                 )
@@ -65,7 +65,7 @@ const LeftRightPortfolio = ({items, gutter}: Props) => {
                         leftRightPortfolioItems.map((item, i) => {
                             if (!item.isLeft) {
                                 return (
-                                    <Link to={"/portfolio/" + item.header} key={i}>
+                                    <Link to={"/portfolio/" + item.route} key={i}>
                                         <LabelImage marginBottom={gutter} label={item.header} alt={item.header} src={item.items[0].small.src}></LabelImage>
                                     </Link>
                                 )

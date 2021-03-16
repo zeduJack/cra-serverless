@@ -49,7 +49,7 @@ const Portfolio = () => {
       {
         isMobile &&
         portfolio.map((item, i) => (
-          <Link to={"/portfolio/" + item.header} key={i}>
+          <Link to={"/portfolio/" + item.route} key={i}>
             <LabelImage marginBottom={gutter} label={item.header} alt={item.header} src={item.items[0].small.src}></LabelImage>
           </Link>
         ))

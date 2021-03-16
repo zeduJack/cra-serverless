@@ -59,7 +59,9 @@ const PortfolioContent = () => {
     }
 
     let { id } = useParams<ParamTypes>();
-    let portfolio = portfolios.filter(p => p.header === id)[0];
+    const route = id.toLowerCase();
+    let portfolio = portfolios.filter(p => p.route === route)[0];
+    const header = portfolio.header;
     const photoSwipeItems = portfolio.items.map(i => i.medium);
 
     const theme = useTheme();
@@ -74,11 +76,11 @@ const PortfolioContent = () => {
             <Breadcrumbs className={classes.breadcrumb} aria-label="breadcrumb">
                 <Link style={{ cursor: 'pointer' }} color="inherit" onClick={() => setRedirectToPortfolio(true)}>Portfolio</Link>
 
-                <Typography color="textPrimary">{id}</Typography>
+                <Typography color="textPrimary">{header}</Typography>
             </Breadcrumbs>
 
             <Typography variant="h1">
-                {id}
+                {header}
             </Typography>
 
             {

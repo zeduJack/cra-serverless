@@ -10,6 +10,7 @@ export interface PortfolioItem {
 }
 
 export interface Portfolio {
+    route: string;
     header: string;
     items: PortfolioItem[]
 }

@@ -2,280 +2,281 @@
 
 export const portfolio: Portfolio[] = [
     {
+        "route":  "portrait",
         "header":  "Portrait",
         "items":  [
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%281%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(1).jpg",
                                         "w":  800,
                                         "h":  572
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%281%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(1).jpg",
                                          "w":  2000,
                                          "h":  1429
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%2810%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(10).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%2810%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(10).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%2812%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(12).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%2812%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(12).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%2814%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(14).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%2814%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(14).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%2815%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(15).jpg",
                                         "w":  534,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%2815%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(15).jpg",
                                          "w":  1334,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%2816%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(16).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%2816%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(16).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%2819%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(19).jpg",
                                         "w":  800,
                                         "h":  534
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%2819%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(19).jpg",
                                          "w":  2000,
                                          "h":  1335
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%282%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(2).jpg",
                                         "w":  571,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%282%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(2).jpg",
                                          "w":  1428,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%2820%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(20).jpg",
                                         "w":  800,
                                         "h":  533
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%2820%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(20).jpg",
                                          "w":  2000,
                                          "h":  1333
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%2821%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(21).jpg",
                                         "w":  534,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%2821%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(21).jpg",
                                          "w":  1335,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%2822%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(22).jpg",
                                         "w":  800,
                                         "h":  534
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%2822%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(22).jpg",
                                          "w":  2000,
                                          "h":  1335
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%2825%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(25).jpg",
                                         "w":  534,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%2825%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(25).jpg",
                                          "w":  1335,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%2826%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(26).jpg",
                                         "w":  800,
                                         "h":  534
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%2826%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(26).jpg",
                                          "w":  2000,
                                          "h":  1335
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%2828%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(28).jpg",
                                         "w":  534,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%2828%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(28).jpg",
                                          "w":  1335,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%2830%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(30).jpg",
                                         "w":  618,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%2830%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(30).jpg",
                                          "w":  1546,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%2833%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(33).jpg",
                                         "w":  534,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%2833%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(33).jpg",
                                          "w":  1335,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%2834%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(34).jpg",
                                         "w":  800,
                                         "h":  534
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%2834%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(34).jpg",
                                          "w":  2000,
                                          "h":  1335
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%2835%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(35).jpg",
                                         "w":  534,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%2835%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(35).jpg",
                                          "w":  1335,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%284%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(4).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%284%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(4).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%285%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(5).jpg",
                                         "w":  571,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%285%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(5).jpg",
                                          "w":  1429,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%286%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(6).jpg",
                                         "w":  571,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%286%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(6).jpg",
                                          "w":  1428,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%287%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(7).jpg",
                                         "w":  571,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%287%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(7).jpg",
                                          "w":  1429,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/1_Portrait/small/1%20%288%29.jpg",
+                                        "src":  "/photos/1_Portrait/small/1%20(8).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/1_Portrait/medium/1%20%288%29.jpg",
+                                         "src":  "/photos/1_Portrait/medium/1%20(8).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
@@ -415,280 +416,281 @@ export const portfolio: Portfolio[] = [
                   ]
     },
     {
+        "route":  "hochzeit",
         "header":  "Hochzeit",
         "items":  [
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/1%20%2814%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/1%20(14).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/1%20%2814%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/1%20(14).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/1%20%282%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/1%20(2).jpg",
                                         "w":  800,
                                         "h":  533
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/1%20%282%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/1%20(2).jpg",
                                          "w":  2000,
                                          "h":  1333
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/1%20%2823%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/1%20(23).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/1%20%2823%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/1%20(23).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/1%20%2829%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/1%20(29).jpg",
                                         "w":  800,
                                         "h":  571
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/1%20%2829%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/1%20(29).jpg",
                                          "w":  2000,
                                          "h":  1429
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/1%20%2830%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/1%20(30).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/1%20%2830%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/1%20(30).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/1%20%2841%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/1%20(41).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/1%20%2841%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/1%20(41).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/1%20%2848%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/1%20(48).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/1%20%2848%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/1%20(48).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/1%20%2849%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/1%20(49).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/1%20%2849%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/1%20(49).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/1%20%2853%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/1%20(53).jpg",
                                         "w":  571,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/1%20%2853%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/1%20(53).jpg",
                                          "w":  1428,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/1%20%2864%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/1%20(64).jpg",
                                         "w":  800,
                                         "h":  533
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/1%20%2864%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/1%20(64).jpg",
                                          "w":  2000,
                                          "h":  1333
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/1%20%2871%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/1%20(71).jpg",
                                         "w":  800,
                                         "h":  571
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/1%20%2871%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/1%20(71).jpg",
                                          "w":  2000,
                                          "h":  1428
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/1%20%2877%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/1%20(77).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/1%20%2877%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/1%20(77).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/5%20%2816%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/5%20(16).jpg",
                                         "w":  800,
                                         "h":  533
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/5%20%2816%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/5%20(16).jpg",
                                          "w":  2000,
                                          "h":  1333
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/a1%20%28127%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/a1%20(127).jpg",
                                         "w":  800,
                                         "h":  534
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/a1%20%28127%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/a1%20(127).jpg",
                                          "w":  2000,
                                          "h":  1335
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/a1%20%2816%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/a1%20(16).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/a1%20%2816%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/a1%20(16).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/a1%20%2820%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/a1%20(20).jpg",
                                         "w":  800,
                                         "h":  533
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/a1%20%2820%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/a1%20(20).jpg",
                                          "w":  2000,
                                          "h":  1333
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/a1%20%2827%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/a1%20(27).jpg",
                                         "w":  800,
                                         "h":  533
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/a1%20%2827%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/a1%20(27).jpg",
                                          "w":  2000,
                                          "h":  1333
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/a1%20%285%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/a1%20(5).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/a1%20%285%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/a1%20(5).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/a1%20%2858%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/a1%20(58).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/a1%20%2858%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/a1%20(58).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/a1%20%2860%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/a1%20(60).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/a1%20%2860%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/a1%20(60).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/a1%20%2870%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/a1%20(70).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/a1%20%2870%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/a1%20(70).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/a1%20%2884%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/a1%20(84).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/a1%20%2884%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/a1%20(84).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/a1%20%2898%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/a1%20(98).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/a1%20%2898%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/a1%20(98).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
@@ -767,156 +769,156 @@ export const portfolio: Portfolio[] = [
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/p%20%281%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/p%20(1).jpg",
                                         "w":  800,
                                         "h":  533
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/p%20%281%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/p%20(1).jpg",
                                          "w":  2000,
                                          "h":  1333
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/p%20%2810%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/p%20(10).jpg",
                                         "w":  800,
                                         "h":  534
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/p%20%2810%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/p%20(10).jpg",
                                          "w":  2000,
                                          "h":  1335
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/p%20%2812%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/p%20(12).jpg",
                                         "w":  800,
                                         "h":  534
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/p%20%2812%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/p%20(12).jpg",
                                          "w":  2000,
                                          "h":  1335
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/p%20%2813%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/p%20(13).jpg",
                                         "w":  800,
                                         "h":  534
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/p%20%2813%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/p%20(13).jpg",
                                          "w":  2000,
                                          "h":  1335
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/p%20%2814%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/p%20(14).jpg",
                                         "w":  534,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/p%20%2814%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/p%20(14).jpg",
                                          "w":  1335,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/p%20%282%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/p%20(2).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/p%20%282%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/p%20(2).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/p%20%283%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/p%20(3).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/p%20%283%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/p%20(3).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/p%20%284%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/p%20(4).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/p%20%284%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/p%20(4).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/p%20%285%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/p%20(5).jpg",
                                         "w":  800,
                                         "h":  533
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/p%20%285%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/p%20(5).jpg",
                                          "w":  2000,
                                          "h":  1333
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/p%20%286%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/p%20(6).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/p%20%286%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/p%20(6).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/p%20%287%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/p%20(7).jpg",
                                         "w":  800,
                                         "h":  533
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/p%20%287%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/p%20(7).jpg",
                                          "w":  2000,
                                          "h":  1333
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/p%20%288%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/p%20(8).jpg",
                                         "w":  800,
                                         "h":  534
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/p%20%288%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/p%20(8).jpg",
                                          "w":  2000,
                                          "h":  1335
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/2_Hochzeit/small/p%20%289%29.jpg",
+                                        "src":  "/photos/2_Hochzeit/small/p%20(9).jpg",
                                         "w":  800,
                                         "h":  534
                                     },
                           "medium":  {
-                                         "src":  "/photos/2_Hochzeit/medium/p%20%289%29.jpg",
+                                         "src":  "/photos/2_Hochzeit/medium/p%20(9).jpg",
                                          "w":  2000,
                                          "h":  1335
                                      }
@@ -924,6 +926,7 @@ export const portfolio: Portfolio[] = [
                   ]
     },
     {
+        "route":  "event",
         "header":  "Event",
         "items":  [
                       {
@@ -1097,136 +1100,137 @@ export const portfolio: Portfolio[] = [
                   ]
     },
     {
+        "route":  "familie",
         "header":  "Familie",
         "items":  [
                       {
                           "small":  {
-                                        "src":  "/photos/5_Familie/small/01%20%2810%29.jpg",
+                                        "src":  "/photos/5_Familie/small/01%20(10).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/5_Familie/medium/01%20%2810%29.jpg",
+                                         "src":  "/photos/5_Familie/medium/01%20(10).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/5_Familie/small/01%20%2818%29.jpg",
+                                        "src":  "/photos/5_Familie/small/01%20(18).jpg",
                                         "w":  800,
                                         "h":  534
                                     },
                           "medium":  {
-                                         "src":  "/photos/5_Familie/medium/01%20%2818%29.jpg",
+                                         "src":  "/photos/5_Familie/medium/01%20(18).jpg",
                                          "w":  2000,
                                          "h":  1335
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/5_Familie/small/01%20%2819%29.jpg",
+                                        "src":  "/photos/5_Familie/small/01%20(19).jpg",
                                         "w":  800,
                                         "h":  534
                                     },
                           "medium":  {
-                                         "src":  "/photos/5_Familie/medium/01%20%2819%29.jpg",
+                                         "src":  "/photos/5_Familie/medium/01%20(19).jpg",
                                          "w":  2000,
                                          "h":  1335
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/5_Familie/small/01%20%282%29.jpg",
+                                        "src":  "/photos/5_Familie/small/01%20(2).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/5_Familie/medium/01%20%282%29.jpg",
+                                         "src":  "/photos/5_Familie/medium/01%20(2).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/5_Familie/small/01%20%283%29.jpg",
+                                        "src":  "/photos/5_Familie/small/01%20(3).jpg",
                                         "w":  800,
                                         "h":  571
                                     },
                           "medium":  {
-                                         "src":  "/photos/5_Familie/medium/01%20%283%29.jpg",
+                                         "src":  "/photos/5_Familie/medium/01%20(3).jpg",
                                          "w":  2000,
                                          "h":  1429
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/5_Familie/small/01%20%2830%29.jpg",
+                                        "src":  "/photos/5_Familie/small/01%20(30).jpg",
                                         "w":  800,
                                         "h":  534
                                     },
                           "medium":  {
-                                         "src":  "/photos/5_Familie/medium/01%20%2830%29.jpg",
+                                         "src":  "/photos/5_Familie/medium/01%20(30).jpg",
                                          "w":  2000,
                                          "h":  1335
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/5_Familie/small/01%20%2835%29.jpg",
+                                        "src":  "/photos/5_Familie/small/01%20(35).jpg",
                                         "w":  800,
                                         "h":  534
                                     },
                           "medium":  {
-                                         "src":  "/photos/5_Familie/medium/01%20%2835%29.jpg",
+                                         "src":  "/photos/5_Familie/medium/01%20(35).jpg",
                                          "w":  2000,
                                          "h":  1335
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/5_Familie/small/01%20%2837%29.jpg",
+                                        "src":  "/photos/5_Familie/small/01%20(37).jpg",
                                         "w":  800,
                                         "h":  534
                                     },
                           "medium":  {
-                                         "src":  "/photos/5_Familie/medium/01%20%2837%29.jpg",
+                                         "src":  "/photos/5_Familie/medium/01%20(37).jpg",
                                          "w":  2000,
                                          "h":  1335
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/5_Familie/small/01%20%284%29.jpg",
+                                        "src":  "/photos/5_Familie/small/01%20(4).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/5_Familie/medium/01%20%284%29.jpg",
+                                         "src":  "/photos/5_Familie/medium/01%20(4).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/5_Familie/small/01%20%2841%29.jpg",
+                                        "src":  "/photos/5_Familie/small/01%20(41).jpg",
                                         "w":  800,
                                         "h":  534
                                     },
                           "medium":  {
-                                         "src":  "/photos/5_Familie/medium/01%20%2841%29.jpg",
+                                         "src":  "/photos/5_Familie/medium/01%20(41).jpg",
                                          "w":  2000,
                                          "h":  1335
                                      }
                       },
                       {
                           "small":  {
-                                        "src":  "/photos/5_Familie/small/01%20%287%29.jpg",
+                                        "src":  "/photos/5_Familie/small/01%20(7).jpg",
                                         "w":  533,
                                         "h":  800
                                     },
                           "medium":  {
-                                         "src":  "/photos/5_Familie/medium/01%20%287%29.jpg",
+                                         "src":  "/photos/5_Familie/medium/01%20(7).jpg",
                                          "w":  1333,
                                          "h":  2000
                                      }
@@ -1330,6 +1334,7 @@ export const portfolio: Portfolio[] = [
                   ]
     },
     {
+        "route":  "landscape",
         "header":  "Landscape",
         "items":  [
                       {
