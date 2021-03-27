@@ -24,8 +24,7 @@ const PhotoSwipeWrapper = (props: any) => {
         shareButtons: [
             { id: 'facebook', label: 'Share on Facebook', url: 'https://www.facebook.com/sharer/sharer.php?u={{image_url}}' },
             { id: 'twitter', label: 'Tweet', url: 'https://twitter.com/intent/tweet?text={{text}}&url={{image_url}}' },
-            { id: 'pinterest', label: 'Pin it', url: 'http://www.pinterest.com/pin/create/button/?url={{url}}&media={{image_url}}&description={{text}}' },
-            { id: 'download', label: 'Download image', url: '{{raw_image_url}}', download: true }
+            { id: 'pinterest', label: 'Pin it', url: 'http://www.pinterest.com/pin/create/button/?url={{url}}&media={{image_url}}&description={{text}}' }
         ],
         getImageURLForShare: function (shareButtonData: any) {
             // `shareButtonData` - object from shareButtons array

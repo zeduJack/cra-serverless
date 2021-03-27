@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import CloseIcon from '@material-ui/icons/Close';
 import Drawer from '@material-ui/core/Drawer';
 import { makeStyles } from '@material-ui/core/styles';
-import ExpansionPanel from '@material-ui/core/ExpansionPanel';
-import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
-import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
+import Accordion from '@material-ui/core/Accordion';
+import AccordionSummary from '@material-ui/core/AccordionSummary';
+import AccordionDetails from '@material-ui/core/AccordionDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import { Link } from "react-router-dom";
@@ -74,22 +74,22 @@ const SideNav = ({ sidenavOpen, setSidenavOpen }: Props) => {
                 <CloseIcon onClick={() => setSidenavOpen(!sidenavOpen)} className={classes.closeButton}></CloseIcon>
                 {navigation.map((item: NavItem, idx) => {
                     if (item.items) {
-                        return (<ExpansionPanel key={idx} classes={{ root: expansionPanelClasses.root }}>
-                            <ExpansionPanelSummary
+                        return (<Accordion key={idx} classes={{ root: expansionPanelClasses.root }}>
+                            <AccordionSummary
                                 className={expansionPanelClasses.summary}
                                 expandIcon={<ExpandMoreIcon />}
                                 aria-controls="panel1a-content"
                                 id="panel1a-header"
                             >
                                 <Typography>{item.displayName}</Typography>
-                            </ExpansionPanelSummary>
-                            <ExpansionPanelDetails className={expansionPanelClasses.details}>
+                            </AccordionSummary>
+                            <AccordionDetails className={expansionPanelClasses.details}>
                                 {item.items.map((subItem, subIndex) => (
                                     <Link key={subIndex} className={expansionPanelClasses.link} onClick={() => setSidenavOpen(!sidenavOpen)} to={subItem.route}>{subItem.displayName}</Link>
                                 ))}
 
-                            </ExpansionPanelDetails>
-                        </ExpansionPanel>)
+                            </AccordionDetails>
+                        </Accordion>)
                     } else {
                         return (
                             <Link key={idx} className={classes.link} onClick={() => setSidenavOpen(!sidenavOpen)} to={item.route}>{item.displayName}</Link>
