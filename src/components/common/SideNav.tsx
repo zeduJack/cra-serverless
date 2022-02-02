@@ -33,7 +33,7 @@ const SideNav = ({ sidenavOpen, setSidenavOpen }: Props) => {
             display: 'flex'
         },
         active: {
-            backgroundColor: 'aliceblue'
+            backgroundColor: 'lightgrey'
         }
     }));
 

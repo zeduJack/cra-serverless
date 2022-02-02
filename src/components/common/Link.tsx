@@ -1,7 +1,7 @@
 import { styled } from '@material-ui/core/styles';
-import { Link as RouterLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
-const Link = styled(RouterLink)({
+const Link = styled(NavLink)({
   display: 'block',
   textDecoration: 'none',
   color: 'white'
