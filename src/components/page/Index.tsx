@@ -7,6 +7,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import PortfolioContent from './PortfolioContent';
 import PhotoSwipeTest from './PhotoSwipeTest';
 import ScrollToTop from '../common/ScrollToTop';
+import  { Redirect } from 'react-router-dom';
 
 import { navigation, SubNavItem, Nav } from '../../nav';
 import { angebote, Angebot as AngebotType } from '../../angebote';
@@ -56,7 +57,7 @@ const Page = ({ setSidenavOpen }: Props) => {
           <Portfolio />
         </Route>
         <Route path="/">
-          <Portfolio />
+          <Redirect to='/portfolio' />
         </Route>
       </Switch>
     </div>
