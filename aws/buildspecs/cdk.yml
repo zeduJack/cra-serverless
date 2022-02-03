@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       nodejs: 14
     commands:
-      - yarn install
+      - yarn install --ignore-engines
   build:
     commands:
       - yarn cdk synth
