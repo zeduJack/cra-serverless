@@ -5,7 +5,7 @@ phases:
     runtime-versions:
       nodejs: 14
     commands:
-      - yarn install --ignore-engines
+      - yarn install
   build:
     commands:
       - yarn build
