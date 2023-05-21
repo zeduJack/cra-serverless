@@ -179,3 +179,26 @@ To make sure you have a pleasant experience, please read the [code of conduct](C
 [koa]: https://koajs.com/
 [codebuild]: https://aws.amazon.com/codebuild/
 [pipeline]: https://aws.amazon.com/codepipeline/
+
+
+# Docker
+## Create a local image with the name photosha
+Type the following command in the directory where the Docker file is.
+```
+docker build -t photosha .
+``` 
+
+## Create a local container with the name photosha-test from the photosha image with local port 8080
+```
+docker run -p 8080:80 --name photosha-test photosha
+``` 
+## Open local website hosted in local docker
+http://localhost:8080/
+
+
+# VPS CapRover
+## Deploy to CapRover
+You can deploy the application with the following command in the terminal.
+```
+caprover deploy
+```
